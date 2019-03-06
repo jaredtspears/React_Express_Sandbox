@@ -1,0 +1,32 @@
+{
+  "name": "react_express_sandbox",
+  "version": "1.0.0",
+  "description": "Boilerplate for react and express",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "cd client && install",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "cd client && npm start", 
+    "dev": "concurrently \"npm run server \" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaredtspears/React_Express_Sandbox.git"
+  },
+  "author": "Jared Spears",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jaredtspears/React_Express_Sandbox/issues"
+  },
+  "homepage": "https://github.com/jaredtspears/React_Express_Sandbox#readme",
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "create-react-app": "^2.1.5",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
